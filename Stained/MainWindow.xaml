@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="Laptopbérlés" Height="500" Width="350">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Laptop leltári számok" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Text="Laptop adatai" VerticalAlignment="Center" Grid.Column="1"></TextBlock>
+        <ListBox Name="leltariszamlista" Grid.Row="1">
+            
+        </ListBox>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Laptop leltári szám" Margin="0 10 0 10"></TextBlock>
+            <TextBlock Text="Model" Margin="0 10 0 10"></TextBlock>
+            <TextBlock Text="RAM (GB)" Margin="0 10 0 10"></TextBlock>
+            <TextBlock Text="Szín" Margin="0 10 0 10"></TextBlock>
+            <TextBlock Text="Napi bérleti díj" Margin="0 10 0 10"></TextBlock>
+            <TextBlock Text="Kaució" Margin="0 10 0 10"></TextBlock>
+            <TextBlock Text="Bérlések darabszáma" Margin="0 10 0 10"></TextBlock>
+        </StackPanel>
         
     </Grid>
 </Window>
